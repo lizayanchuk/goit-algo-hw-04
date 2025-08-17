@@ -5,9 +5,9 @@ def total_salary(path):
             salaries = []
             for line in file:
                 if line:
-                    salaries.append(int(line.strip().split(",")[1]))
+                    salaries.append(float(line.strip().split(",")[1]))
 
-        return (sum(salaries), int(sum(salaries) / len(salaries))) if salaries else (0, 0)
+        return (sum(salaries), sum(salaries) / len(salaries)) if salaries else (0, 0)
     except FileNotFoundError:
         return (0, 0)
 
