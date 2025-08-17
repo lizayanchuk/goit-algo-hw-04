@@ -47,9 +47,9 @@ def main():
             print(add_contact(args, contacts))
         elif command == "change":
             print(change_number(args, contacts))
-        elif command == "show":
+        elif command == "phone":
             print(show_phone(args, contacts))
-        elif command == "showall":
+        elif command == "all":
             print(show_all_numbers(contacts))
         else:
             print("Invalid command.")
